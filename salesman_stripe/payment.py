@@ -15,8 +15,7 @@ from salesman.basket.models import BaseBasket
 from salesman.checkout.payment import PaymentError, PaymentMethod
 from salesman.core.utils import get_salesman_model
 from salesman.orders.models import BaseOrder, BaseOrderPayment
-from stripe.error import SignatureVerificationError, StripeError
-from stripe.stripe_object import StripeObject
+from stripe import SignatureVerificationError, StripeError, StripeObject
 
 from .conf import app_settings
 
